@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etFruit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter a fruit name" />
+
+    <EditText
+        android:id="@+id/etFruitCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFruit"
+        android:gravity="center"
+        android:hint="Enter fruit count" />
+
+    <Button
+        android:id="@+id/btnAddFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFruitCount"
+        android:layout_centerHorizontal="true"
+        android:text="Add Fruit" />
+
+</RelativeLayout>

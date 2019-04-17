@@ -40,7 +40,6 @@ public abstract class FruitDatabase extends RoomDatabase {
         return instance;
     }
 
-
     private static class PopulateDbAsynctask extends AsyncTask<Void, Void, Void> {
 
         private FruitDao fruitDao;

@@ -17,6 +17,9 @@ public class Fruit {
 
     private boolean inCart;
 
+    public Fruit() {
+    }
+
     public Fruit(String name, int count, int cartCount, boolean inCart) {
         this.name = name;
         this.count = count;
