@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.fruitsapp.interfaces.IFruitListener;
 import com.example.fruitsapp.R;
+import com.example.fruitsapp.interfaces.IFruitListener;
 import com.example.fruitsapp.model.Fruit;
 
 import java.util.List;
@@ -52,6 +52,13 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.FruitHolder>
             }
         });
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fruitListener.onItemClick(fruit);
+            }
+        });
+
     }
 
     @Override
@@ -78,8 +85,6 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.FruitHolder>
 
         }
     }
-
-
 
 
 }

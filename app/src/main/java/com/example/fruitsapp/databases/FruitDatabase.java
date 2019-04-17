@@ -52,10 +52,10 @@ public abstract class FruitDatabase extends RoomDatabase {
         protected Void doInBackground(Void... voids) {
             fruitDao.insert(new Fruit("Apple", 0, 1, true));
             fruitDao.insert(new Fruit("Mango", 15, 0, false));
-            fruitDao.insert(new Fruit("Banana", 20, 0,false));
-            fruitDao.insert(new Fruit("Papaya", 25, 3,true));
+            fruitDao.insert(new Fruit("Banana", 20, 0, false));
+            fruitDao.insert(new Fruit("Papaya", 25, 3, true));
             fruitDao.insert(new Fruit("Chickoo", 35, 12, true));
-            fruitDao.insert(new Fruit("ABC", 50, 0,false));
+            fruitDao.insert(new Fruit("ABC", 50, 0, false));
             return null;
         }
     }

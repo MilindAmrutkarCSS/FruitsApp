@@ -6,4 +6,6 @@ public interface IFruitListener {
 
     void onAddToCart(Fruit fruit);
 
+    void onItemClick(Fruit fruit);
+
 }

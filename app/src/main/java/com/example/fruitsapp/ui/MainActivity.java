@@ -85,8 +85,6 @@ public class MainActivity extends AppCompatActivity {
                 });
 
                 dialog.show();
-
-
         }
         return super.onOptionsItemSelected(item);
 

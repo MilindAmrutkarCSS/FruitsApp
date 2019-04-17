@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.fruitsapp.interfaces.IInCartListener;
 import com.example.fruitsapp.R;
+import com.example.fruitsapp.interfaces.IInCartListener;
 import com.example.fruitsapp.model.Fruit;
 
 import java.util.List;
@@ -79,8 +79,6 @@ public class InCartAdapter extends RecyclerView.Adapter<InCartAdapter.InCartHold
 
         }
     }
-
-
 
 
 }
