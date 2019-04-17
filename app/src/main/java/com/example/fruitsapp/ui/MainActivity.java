@@ -58,13 +58,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.add_fruit:
-                Dialog dialog = new Dialog(this);
+                Dialog dialog = new Dialog(this, R.style.Dialog);
                 dialog.setContentView(R.layout.custom_dialog_main);
                 dialog.setTitle("Add Fruit");
 
                 EditText etFruit = dialog.findViewById(R.id.etFruit);
                 EditText etFruitCount = dialog.findViewById(R.id.etFruitCount);
                 Button btnAddFruit = dialog.findViewById(R.id.btnAddFruit);
+
 
                 btnAddFruit.setOnClickListener(new View.OnClickListener() {
                     @Override

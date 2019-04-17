@@ -88,9 +88,11 @@ public class FruitsFragment extends Fragment implements IFruitListener {
     @Override
     public void onItemClick(Fruit fruit) {
         Fruit fruit1 = fruit;
-        Dialog dialog = new Dialog(context);
+        Dialog dialog = new Dialog(context, R.style.Dialog);
+
+
         dialog.setContentView(R.layout.custom_dialog_main);
-        dialog.setTitle("Edit Fruit");
+        dialog.setTitle("Edit Changes");
 
         EditText etFruit = dialog.findViewById(R.id.etFruit);
         EditText etFruitCount = dialog.findViewById(R.id.etFruitCount);
